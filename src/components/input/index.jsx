@@ -6,7 +6,9 @@ const Input = ({
     type = 'text',
     className = '',
     isRequired = false,
-    placeholder = ''
+    placeholder = '',
+    value = '',
+    onChange = () => {}
 
 }) => {
     return (
@@ -35,7 +37,9 @@ const Input = ({
                     focus:border-blue-500
                 `}
                 required={isRequired}
-                placeholder={placeholder}></input>
+                placeholder={placeholder}
+                value={value}
+                onChange={onChange}></input>
         </div>
     )
 }
