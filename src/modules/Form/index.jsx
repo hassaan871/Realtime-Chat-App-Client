@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import Input from '../../components/input';
+import Button from '../../components/Button';
 
 function Form() {
     return (
@@ -8,7 +9,9 @@ function Form() {
             <div className='text-xl font-light mb-10'>Sign up now to get started</div>
             <Input label='Full Name' name='name' placeholder='Enter your full name'/>
             <Input label='Email' name='email' placeholder='Enter your email'/>
-            <Input label='Password' name='password' placeholder='Enter your password'/>
+            <Input label='Password' name='password' placeholder='Enter your password' className='mb-4'/>
+            <Button label='Sign up'className='w-1/2 mb-4'/>
+            <div>Already have an account? <span className='text-primary cursor-pointer underline'>Sign in</span></div>
         </div>
     )
 }
